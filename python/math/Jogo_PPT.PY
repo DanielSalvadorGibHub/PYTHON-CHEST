@@ -1,8 +1,7 @@
 from random import randint
 from time import sleep
-resultado == False
+resultado = False
 lista = ['PEDRA', 'PAPEL', 'TESOURA']
-sorte = randint(0,2)
 print("="*12)
 print("ESCOLHGA ENTRE:")
 sleep(1)
@@ -14,6 +13,7 @@ print("[2]-Tesoura")
 sleep(1)
 print("="*12)
 while resultado == False:
+    sorte = randint(0,2)
     jogada = int(input("Qual vai ser a sua jogada?  "))
     sleep(0.5)
     print("="*12)
@@ -54,3 +54,4 @@ while resultado == False:
             resultado = True
         elif jogada == 2:
             print("EMPATE")
+print("Acabou!")
