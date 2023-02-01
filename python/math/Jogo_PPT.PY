@@ -1,16 +1,56 @@
-import numpy
-lista = ['pedra', 'papel', 'tesoura']
-elemento = numpy.random.choice(lista)
-resultado = False
-print("VAMOS JOGAR UM JOGO, escolha entre pedra, papel ou tesoura: ")
+from random import randint
+from time import sleep
+resultado == False
+lista = ['PEDRA', 'PAPEL', 'TESOURA']
+sorte = randint(0,2)
+print("="*12)
+print("ESCOLHGA ENTRE:")
+sleep(1)
+print("[0]-Pedra")
+sleep(1)
+print("[1]-Papel")
+sleep(1)
+print("[2]-Tesoura")
+sleep(1)
+print("="*12)
 while resultado == False:
-    escolha = str(input("Escolha um elemento da lista: "))
-    if escolha != elemento:
-        if elemento == "pedra" and escolha == "papel":
-            print(f"O elemento escolhido foi {elemento} e a sua escolha foi {escolha}, você GANHOU!")
-            resultado = False
-        else:
-            print(f"O elemento escolhido foi {elemento} e a sua escolha foi {escolha}, você PERDEU!")
+    jogada = int(input("Qual vai ser a sua jogada?  "))
+    sleep(0.5)
+    print("="*12)
+    sleep(0.5)
+    print("JO")
+    sleep(0.5)
+    print("KEN")
+    sleep(0.5)
+    print("PO")
+    sleep(0.5)
+    print("="*12)
+    print(f"ADVERSARIO JOGOU: {lista[sorte]}!")
+    print(f"VOCÊ JOGOU: {lista[jogada]}!")
+    print("="*12)
+    if sorte == 0: #PEDRA
+        if jogada == 0:
+            print("EMPATE")
+        elif jogada == 1:
+            print("JOGADOR VENCEU!")
+            resultado = True
+        elif jogada ==2:
+            print("ADVERSARIO VENCEU!")
 
-    else:
-        print("Deu empate")
+    if sorte == 1: #PAPEL
+        if jogada == 0:
+            print("ADVERSARIO VENCEU!")
+        elif jogada == 1:
+            print("EMPATE")
+        elif jogada ==2:
+            print("JOGADOR VENCEU!")
+            resultado = True
+
+    if sorte == 2: #TESOURA
+        if jogada == 0:
+            print("ADVERSARIO VENCEU!")
+        elif jogada == 1:
+            print("JOGADOR VENCEU!")
+            resultado = True
+        elif jogada == 2:
+            print("EMPATE")
