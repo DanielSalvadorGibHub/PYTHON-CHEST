@@ -13,7 +13,7 @@ sleep(1)
 print("[2]-Tesoura")
 sleep(1)
 print("="*12)
-# loop vai ser executadoaté que o jogador ganhe:
+# loop vai ser executadoaté que o jogador ganhe o jogo:
 while resultado == False:
     sorte = randint(0,2)
     jogada = int(input("Qual vai ser a sua jogada?  "))
