@@ -1,5 +1,5 @@
 import pyautogui as py
-
+#modelo computador positivo:
 emp = str(input("poderia informar o nome?: "))
 qnt = int(input("poderia informar a quantidade?: "))
 
