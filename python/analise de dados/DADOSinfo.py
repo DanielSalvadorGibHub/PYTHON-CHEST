@@ -1,4 +1,4 @@
-#apnas para o computador da organização
+#apenas para o computador da organização
 
 import pyautogui as py
 import time as t
